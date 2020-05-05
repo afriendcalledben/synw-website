@@ -1,0 +1,193 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+body {
+font-family: 'Jost', serif;
+background-color: #181818;
+color: #fff;
+margin-bottom: 100px;
+}
+
+.card {
+  color: #1F1F1f;
+}
+
+h1, h2, h3, h4, h5, .movietitle {
+  font-family: 'Staatliches', sans-serif;
+}
+
+.movieoftheweek {
+  color: white;
+  background-color: #000;
+  background-image: url("../images/giphy.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.movieoftheweek img {
+  border: 3px #fff solid;
+}
+
+.movieoftheweek h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .movieoftheweek h1 {
+    font-size: 70px;
+  }
+}
+
+.filmcountdown {
+  border-top: 2px #f00000 solid;
+  background-color: #353a40;
+}
+
+.filmcountdown .message {
+  font-size: 28px;
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+  }
+}
+
+.site-title {
+  font-family: 'Raleway', sans-serif;
+  color: #ffff00;
+  font-weight: 900;
+  font-size: 1.8em !important;
+}
+
+.videoContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-nav > li.twitter > a:hover {
+  color: #1DA1F2 !important;
+}
+
+.navbar-nav > li.whatsapp > a:hover {
+  color: #25d366 !important;
+}
+
+.countdown-alt-1 {
+    display: inline-block;
+    font-size: 0;  /* Hack for inline and inline-block extra markup generated spaces */
+    color: #353a40;
+}
+.countdown-alt-1 .item {
+    position: relative;
+}
+.countdown-alt-1 .dd,
+.countdown-alt-1 .hh-1,
+.countdown-alt-1 .hh-2,
+.countdown-alt-1 .mm-1,
+.countdown-alt-1 .mm-2,
+.countdown-alt-1 .ss-1,
+.countdown-alt-1 .ss-2 {
+    font-family: 'Jost', serif;
+    font-weight: 800;
+    background: #F6F6F6;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 2px;
+    min-width: 40px;
+    padding: 2px 2px;
+    text-align: center;
+}
+.countdown-alt-1 .hh-1,
+.countdown-alt-1 .hh-2,
+.countdown-alt-1 .mm-1,
+.countdown-alt-1 .mm-2,
+.countdown-alt-1 .ss-1,
+.countdown-alt-1 .ss-2 {
+    width: 40px;
+    max-width: 40px;
+}
+.countdown-alt-1 .label {
+    font-weight: bold;
+    background: #F6F6F6;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 1px 2px;
+    padding: 2px 5px;
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+}
+.countdown-alt-1 .separator-dd,
+.countdown-alt-1 .separator {
+    font-family: 'Jost', serif;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 20px;
+    position: relative;
+}
+
+.modal {
+  color: #000;
+}
+
+.modal ol li
+{
+  margin-bottom: 10px;
+}
+
+.modal-dialog-full-width {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width:none !important;
+
+}
+
+.modal-content-full-width  {
+    height: auto !important;
+    min-height: 100% !important;
+    border-radius: 0 !important;
+    background-color: #ececec !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.modal-content-full-width img  {
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
