@@ -19,19 +19,29 @@
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700;900&family=Russo+One&family=Staatliches&family=Raleway:wght@500;700;900&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- CSS Shake -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700;900&family=Russo+One&family=Staatliches&family=Raleway:wght@500;700;900&family=Righteous&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="./css/frontpage_0.3.css" rel="stylesheet">
+  <link href="./css/frontpage_0.4.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <div class="navbar text-white fixed-bottom filmcountdown">
+  <div class="navbar text-white fixed-bottom filmcountdown red">
     <div class="container">
-        <p class="message mt-3 d-none d-sm-block">Film starts in:</p>
-        <p class="ml-auto mt-1 countdown" style="min-height: 58px;"><filmcountdown></filmcountdown></p>
+      <p class="message mt-3 d-none d-sm-block">Film starts in:</p>
+      <p class="ml-auto mt-1 countdown" style="min-height: 58px;">
+        <filmcountdown></filmcountdown>
+      </p>
+      <div class="d-block w-100 film-position">
+        <div class="progress" style="height:5px; background-color: rgb(80, 80, 80) !important;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background-color: rgb(255, 255, 255);"></div>
+        </div>
+    </div>
     </div>
   </div>
   <!-- Navigation -->
@@ -60,9 +70,6 @@
           <li class="nav-item twitter">
             <a class="nav-link text-uppercase" href="https://twitter.com/synwclub"><i class="fab fa-twitter fa-2x"></i><span class="d-lg-none pl-2"> Twitter</span></a>
           </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-discord fa-2x"></i></a>
-          </li>-->
         </ul>
       </div>
     </div>
@@ -76,7 +83,7 @@
           <img src="https://www.joblo.com/assets/images/oldsite/posters/images/full/1992-freejack-poster2.jpg" class="img-fluid mainposter popup"></img>
         </div>
         <div class="col-md-6 mt-auto">
-        <p class="lead text-white-80 mt-3" style="font-size: 30px; font-style: italic; font-weight: 300"><q>Time flies. But to survive the year 2009, he'll need to move a lot faster.</q></p>
+          <p class="lead text-white-80 mt-3" style="font-size: 30px; font-style: italic; font-weight: 300"><q>Time flies. But to survive the year 2009, he'll need to move a lot faster.</q></p>
           <h2 class="mt-5">NEXT FILM:</h2>
           <h1 class="display-4 text-white glow">Freejack</h1>
           <p class="lead text-white-80">(1992) dir. Geoff Murphy</p>
@@ -86,7 +93,6 @@
     </div>
   </header>
 
-
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-6 border-left border-white pl-3" style="border-color: #555 !important;">
@@ -94,288 +100,336 @@
         <p class="lead mb-2 text-white-80 mb-3">Meet from 8pm<br />Trailers at 8:15pm<br />Film at 8:30pm ON THE DOT!</p>
       </div>
       <div class="col-md-6 border-left pl-3" style="border-color: #555 !important;">
-        <p><button class="btn btn-warning btn-lg main_trailer mr-2 mb-2"><i class="fas fa-film"></i> Watch trailer</button> <button class="btn btn-danger btn-lg mr-2 mb-2" data-toggle="modal" data-target="#rentingStreamingModal"><i class="fas fa-ticket-alt"></i> Renting / Streaming Options</button> <button class="btn btn-primary btn-lg mb-2 disabled" data-toggle="tooltip" data-placement="top" title="These will get released on the night at 8pm"><i class="fas fa-film"></i> Watch Coming Distractions</button></p>
+        <p> <button class="btn btn-warning btn-lg main_trailer mr-2 mb-2"><i class="fas fa-film"></i> Watch trailer</button>
+            <button class="btn btn-danger btn-lg mr-2 mb-2" data-toggle="modal" data-target="#rentingStreamingModal"><i class="fas fa-ticket-alt"></i> Renting / Streaming Options</button>
+            <button class="btn btn-primary btn-lg mb-2 disabled coming-distractions" data-toggle="tooltip" data-placement="top" title="These will get released on the night at 8:15pm"><i class="fas fa-film"></i> Watch Coming
+            Distractions</button></p>
       </div></a>
     </div>
   </div>
 
   <div class="container">
-        <img class="img-fluid mb-4" src="images/freejack/freejack_1.png"></img>
-        <img class="img-fluid mb-4" src="images/freejack/freejack_2.png"></img>
-        <img class="img-fluid mb-4" src="images/freejack/freejack_3.png"></img>
-        <img class="img-fluid mb-4" src="images/freejack/freejack_4.png"></img>
+    <img class="img-fluid mb-4" src="images/freejack/freejack_1.png"></img>
+    <img class="img-fluid mb-4" src="images/freejack/freejack_2.png"></img>
+    <img class="img-fluid mb-4" src="images/freejack/freejack_3.png"></img>
+    <img class="img-fluid mb-4" src="images/freejack/freejack_4.png"></img>
   </div>
 
-  <!-- Page Content -->
-  <!--<div class="container">
+  </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <h3>NEXT COMING ATTRACTIONS</h3>
+  <div class="videoContainer">
+
+  </div>
+
+  <div class="navbar navbar-dark bg-dark text-white fixed-bottom video-close">
+    <div class="container">
+      <div class="row ml-auto">
+        <a href="#" target="_blank" class="view-on-youtube"><button class="btn btn-danger ml-2 mb-2"><i class="fab fa-youtube"></i> View on Youtube</button></a>
+        <button class="btn btn-primary ml-2 mb-2 close-player">Close</button>
       </div>
-        <div class="col-md-6">
-          <p class="text-right"><button class="btn btn-primary btn-md pretrailers">Watch all coming attractions</button>
+    </div>
+
+  </div>
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLongTitle">HOW IT WORKS</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-    </div>
-
-    <div class="row ">
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <img class="card-img-top" style="object-fit: cover; width: 100%; height: 200px" src="https://www.joblo.com/assets/images/oldsite/posters/images/full/1997-double-team-poster2.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title movietitle">Double Team</h4>
-            <p class="card-text">(1997) dir. Tsui Hark</p>
-          </div>
-      </div>
-    </div>
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <img class="card-img-top" style="object-fit: cover; width: 100%; height: 200px" src="https://images-na.ssl-images-amazon.com/images/I/91g73WeQA6L._SL1500_.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title movietitle">Teknolust</h4>
-            <p class="card-text">(2002) dir. Lynn Hershman Leeson</p>
-          </div>
+        <div class="modal-body">
+          <p><span style="font-family: 'Raleway', sans-serif; font-weight: 900">SY<span style="color: #f00000">N</span>W</span> is a weekly film club where we get together and watch a film together in isolation. We try and find films we never knew
+            existed or that we love enough to watch again. All you have to do is source a copy of the film, cue it up to play then, next Wednesday - 8:30 on the dot - pless PLAY.</p>
+          <p>There are Coming Distractions to watch before the film from 8:15pm and we'll be about in the chat from 8pm.</p>
+          <ol>
+            <li>Check the website, <a href="https://instagram.com/synwclub" target="_blank">Instagram</a>, <a href="https://twitter.com/synwclub" target="_blank">Twitter</a> or the <a href="https://chat.whatsapp.com/GWVpuhrNDGN20BPFCAbn4U" target="_blank">WhatsApp group</a> to see what the next film is</li>
+            <li>Track a down a copy of the film. You can rent / sream from one of the <strong class="text-danger"><i class="fas fa-ticket-alt"></i> Renting / Streaming Options</strong></li>
+            <li>Come Wednesday 8pm, get the website up, make popcorn, get comfy, chat on the group,<br />watch the <strong class="text-primary"><i class="fas fa-film"></i> Coming Distractions</strong> etc</li>
+            <li>At 8:20pm, cue up the film paused from the first frame and wait for the countdown</li>
+            <li>Watch the countdown at the bottom of the website and, bang on zero, hit <strong style="color: #f00000">PLAY</strong></li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <img class="card-img-top" style="object-fit: cover; width: 100%; height: 200px" src="https://www.joblo.com/assets/images/oldsite/posters/images/full/1995-virtuosity-poster2.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title movietitle">Virtuosity</h4>
-            <p class="card-text">(1995) dir. Brett Leonard</p>
-          </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document" data-dismiss="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="https://www.joblo.com/assets/images/oldsite/posters/images/full/1992-freejack-poster2.jpg" class="img-fluid"></img>
         </div>
       </div>
-    </div>-->
-
+    </div>
   </div>
 
-<div class="videoContainer">
-
-</div>
-
-<div class="navbar navbar-dark bg-dark text-white fixed-bottom video-close">
-  <div class="container">
-    <div class="row ml-auto">
-      <button class="btn btn-primary">Close</button>
-  </div>
-  </div>
-
-</div>
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">HOW IT WORKS</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p><span style="font-family: 'Raleway', sans-serif; font-weight: 900">SY<span style="color: #f00000">N</span>W</span> is a weekly film club where we get together and watch a film together in isolation. We try and find films we never knew existed or that we love enough to watch again. All you have to do is source a copy of the film, cue it up to play then, next Wednesday - 8:30 on the dot - pless PLAY.</p>
-        <p>There are Coming Distractions to watch before the film from 8:15pm and we'll be about in the chat from 8pm.</p>
-        <ol>
-          <li>Check the website, Twitter or group to see what the next film is.</li>
-          <li>Track a down a copy of the film. Buy, rent or stream from one the options.</li>
-          <li>Come Wednesday 8pm, get the website up, make popcorn, get comfy, chat on the group, watch the trailers etc</li>
-          <li>At 8:20pm, cue up the film paused from the first frame and wait for the countdown</li>
-          <li>Watch the countdown at the bottom of the website and hit <strong style="color: #f00000">PLAY</strong></li>
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <div class="modal fade" id="rentingStreamingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLongTitle">RENTING / STREAMING OPTIONS</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>STREAMING</strong></p>
+          <p>No streaming options :(</p>
+          <hr />
+          <p><strong>RENTING</strong></p>
+          <p><small>(Once you start a film on most rental services, you have 48 hours to watch it so wait til Wednesday to start)</small></p>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=-Z0fXKSLqlo"><i class="fab fa-youtube fa-fw"></i> Youtube - Rent HD £3.49</a></li>
+            <li><a href="https://www.amazon.co.uk/gp/video/detail/B00IHS2FPA/ref=atv_dp_share_cu_r"><i class="fab fa-amazon fa-fw"></i> Amazon - Rent HD £3.49 / SD £2.49</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document" data-dismiss="modal">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img src="https://www.joblo.com/assets/images/oldsite/posters/images/full/1992-freejack-poster2.jpg" class="img-fluid"></img>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="rentingStreamingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">RENTING / STREAMING OPTIONS</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p><strong>STREAMING</strong></p>
-        <p>No streaming options :(</p>
-        <hr />
-        <p><strong>RENTING</strong></p>
-        <p><small>(Once you start a film on most rental services, you have 48 hours to watch it so wait til Wednesday to start)</small></p>
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=-Z0fXKSLqlo"><i class="fab fa-youtube fa-fw"></i> Youtube - Rent HD £3.49</a></li>
-          <li><a href="https://www.amazon.co.uk/gp/video/detail/B00IHS2FPA/ref=atv_dp_share_cu_r"><i class="fab fa-amazon fa-fw"></i> Amazon - Rent HD £3.49 / SD £2.49</a></li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="jquery.countdown.js"></script>
+  <script src="js/jquery.countdown.js"></script>
   <script>
-  $(document).ready(function(){
-    "use strict";
-    var filmTitle = '<span style="font-weight:700;">FREEJACK</span>';
-    var previousState = -1;
-    var currentState = 0;
-    var filmStarts = new Date(2020, 4, 3, 10, 50, 0, 0);
-    var filmEnds = new Date(2020, 4, 3, 10, 52, 0, 0);
-    var self = this;
-    function doCountdownCheck() {
-     var localTime = new Date();
-     if (localTime < new Date(filmStarts - (30 * 60 * 1000))) {
-       currentState =  0;
-     } else if (localTime < new Date(filmStarts - (15 * 60 * 1000))) {
-       currentState = 1;
-     } else if (localTime < new Date(filmStarts - (5 * 60 * 1000))) {
-       currentState = 2;
-     } else if (localTime < new Date(filmStarts - (60 * 1000))) {
-       currentState = 3;
-     } else if (localTime < new Date(filmStarts - (30 * 1000))) {
-       currentState = 4;
-     } else if (localTime < filmStarts) {
-       currentState = 5;
-     } else if (localTime < new Date(filmStarts + 3000)) {
-       currentState = 6;
-     } else if (localTime < filmEnds) {
-       currentState = 7;
-     } else {
-       currentState = 8;
-     }
-     if (previousState != currentState)
-     {
-       renderCountdownChange();
-       previousState = currentState;
-     }
-     window.setTimeout(function () { doCountdownCheck(); }, 500);
-   }
+    $(document).ready(function() {
+      "use strict";
+      var getUrlParameter = function getUrlParameter(sParam) {
+          var sPageURL = window.location.search.substring(1),
+              sURLVariables = sPageURL.split('&'),
+              sParameterName,
+              i;
 
-   function renderCountdownChange()
-   {
-     var message = "";
-     var showCountdown = false;
-     var watchAttractions = false;
-     console.log(currentState);
-     switch (currentState)
-     {
-       case 0:
-       message = filmTitle+' starts at:';
-       showCountdown = true;
-       break;
-       case 1:
-       message = filmTitle+' is starting soon! Get the movie ready! Make some popcorn!';
-       showCountdown = true;
-       break;
-       case 2:
-         message = filmTitle+' is starting soon!<br/>Time to watch the coming attractions! <button class="btn btn-primary coming-attractions ml-2 mr-2">Watch now</button>';
-         showCountdown = true;
-         watchAttractions = true;
-       break;
-       case 3:
-       message = filmTitle+' starts in the next 5 minutes! Take your seats.';
-       showCountdown = true;
-       break;
-       case 4:
-       message = 'Get ready to press PLAY on the countdown!';
-       showCountdown = true;
-       break;
-       case 5:
-       message = 'Press PLAY in: ';
-       showCountdown = true;
-       break;
-       case 6:
-         message = 'PRESS PLAY NOW!';
-       break;
-       case 7:
-         message = filmTitle+' is playing now. Catch up at:';
-         showCountdown = true;
-       break;
-       case 8:
-         message = filmTitle+' is finished now. See you next wednesday!';
-       break;
-     }
-     $('.filmcountdown .message').html(message);
-     if (showCountdown) {
-        $('.filmcountdown filmcountdown').show();
-     } else {
-        $('.filmcountdown filmcountdown').hide();
-     }
-     if (watchAttractions)
-     {
-       $('button.coming-attractions').click(function() {
-         showFullscreen('videoseries?list=PL5nqXVoHdhcCg54t57yVs6mWB91_8Z2wd&');
-         //showFullscreen('0BkyDQ6iy0c?');
-       });
-     }
-   }
-   doCountdownCheck();
-   $('.filmcountdown filmcountdown').html(filmStarts.toGMTString());
-   $('.filmcountdown filmcountdown').countDown({
-       css_class: 'countdown-alt-1'
-   });
-   $('.filmcountdown filmcountdown').countDown({
-       css_class: 'countdown-alt-1'
-   });
+          for (i = 0; i < sURLVariables.length; i++) {
+              sParameterName = sURLVariables[i].split('=');
 
-    function showFullscreen(youtubeID)
-    {
-      $('.videoContainer').show();
-      $('.video-close').show();
-      $('.filmcountdown').hide();
-      $('.videoContainer').html('<iframe class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/'+youtubeID+'modestbranding=1&autoplay=1&controls=0&fs=0&loop=0&rel=0&showinfo=0&disablekb=1" frameborder="0" allow="autoplay"></iframe>');
-      window.scrollTo(0,0);
-      $('body').css('overflow', 'hidden');
+              if (sParameterName[0] === sParam) {
+                  return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+              }
+          }
+      };
+      var forcedSetTime = getUrlParameter('emilio');
+      console.log(forcedSetTime);
+      var filmTitle = '<span style="font-weight:700;">FREEJACK</span>';
+      var previousState = -1;
+      var currentState = 0;
+      var comingDistractionsShown = false;
+      var filmLengthInMinutes = 109;
+      var filmStarts = (forcedSetTime == undefined) ? new Date(2020, 4, 6, 20, 30, 0, 0) : new Date(forcedSetTime);
+      var filmEnds = new Date(filmStarts.getTime() + (filmLengthInMinutes * 60  * 1000));
+      var self = this;
 
-    }
-    function hideFullscreen()
-    {
-      $('.videoContainer').hide();
-      $('.videoContainer').empty();
-      $('.video-close').hide();
-      $('.filmcountdown').show();
-      $('body').css('overflow', 'visible');
-    }
-    hideFullscreen();
-    $('button.pretrailers').click(function() {
-      showFullscreen('videoseries?list=PL5nqXVoHdhcCg54t57yVs6mWB91_8Z2wd&');
-      //showFullscreen('0BkyDQ6iy0c?');
-    });
-    $('button.main_trailer').click(function() {
-      //showFullscreen('videoseries?list=PL5nqXVoHdhcBXBoiBmdjgbh_OVlHhnRGD&');
-      showFullscreen('-Z0fXKSLqlo?');
-    });
-    $('.video-close button').click(function() {
+
+
+      function doCountdownCheck() {
+        var localTime = new Date();
+        if (localTime < new Date(filmStarts.getTime() - (30 * 60 * 1000))) {
+          currentState = 0;
+        } else if (localTime < new Date(filmStarts.getTime() - (15 * 60 * 1000))) {
+          currentState = 1;
+        } else if (localTime < new Date(filmStarts.getTime() - (5 * 60 * 1000))) {
+          currentState = 2;
+        } else if (localTime < new Date(filmStarts.getTime() - (60 * 1000))) {
+          currentState = 3;
+        } else if (localTime < new Date(filmStarts.getTime() - (30 * 1000))) {
+          currentState = 4;
+        } else if (localTime < filmStarts) {
+          currentState = 5;
+        } else if (localTime < new Date(filmStarts.getTime() + 5000)) {
+          currentState = 6;
+        } else if (localTime < filmEnds) {
+          currentState = 7;
+        } else {
+          currentState = 8;
+        }
+        if (currentState == 6 || currentState == 7) {
+          var position = Math.round(100 / (filmEnds - filmStarts) * (localTime - filmStarts));
+          if (position < 0) position = 0;
+          if (position > 100) position = 100;
+          $('.film-position .progress-bar').css('width', position+'%');
+        }
+        if (previousState != currentState) {
+          renderCountdownChange();
+          previousState = currentState;
+        }
+        window.setTimeout(function() {
+          doCountdownCheck();
+        }, 100);
+      }
+
+      function disableComingDistractions()
+      {
+          if (comingDistractionsShown)
+          {
+              comingDistractionsShown = false;
+              $('.coming-distractions').click(false);
+              $('.coming-distractions').addClass('disabled');
+              $('.coming-distractions').tooltip();
+          }
+      }
+
+      function enableComingDistractions()
+      {
+          if (!comingDistractionsShown)
+          {
+              comingDistractionsShown = true;
+              $('.coming-distractions').tooltip('disable');
+              $('.coming-distractions').removeClass('disabled');
+              $('.coming-distractions').click(function() {
+                showFullscreen('PL5nqXVoHdhcCg54t57yVs6mWB91_8Z2wd', true);
+              });
+          }
+      }
+
+      function renderCountdownChange() {
+        var message = "";
+        var showCountdown = false;
+        var watchAttractions = false;
+        switch (currentState) {
+          case 0:
+            message = filmTitle + ' starts at:';
+
+            showCountdown = true;
+            break;
+          case 1:
+            message = filmTitle + ' is starting soon! Get the movie ready! Make some popcorn!';
+            showCountdown = true;
+            break;
+          case 2:
+            message = filmTitle + ' is starting soon!<br/>Time to watch the Coming Distractions! <button class="btn btn-primary coming-distractions ml-2 mr-2">Watch now</button>';
+            showCountdown = true;
+            watchAttractions = true;
+            break;
+          case 3:
+            message = filmTitle + ' starts in the next 5 minutes! Take your seats.';
+            showCountdown = true;
+            break;
+          case 4:
+            message = 'Get ready to press PLAY on the countdown!';
+            showCountdown = true;
+            break;
+          case 5:
+            message = 'Press PLAY in: ';
+            showCountdown = true;
+            break;
+          case 6:
+            message = 'PRESS PLAY NOW!';
+            break;
+          case 7:
+            message = filmTitle + ' is playing now. Catch up at:';
+            showCountdown = true;
+            break;
+          case 8:
+            message = filmTitle + ' is finished now. See you next wednesday!';
+            break;
+        }
+        $('.filmcountdown .message').html(message);
+        if (currentState == 6)
+        {
+          $('.filmcountdown .message').addClass('shake shake-constant');
+        } else {
+          $('.filmcountdown .message').removeClass('shake shake-constant');
+        }
+        if (currentState == 2)
+        {
+          $('.coming-distractions').addClass('shake shake-constant');
+        } else {
+          $('.coming-distractions').removeClass('shake shake-constant');
+        }
+        if (showCountdown) {
+          $('.filmcountdown filmcountdown').show();
+        } else {
+          $('.filmcountdown filmcountdown').hide();
+        }
+        if (currentState < 2) {
+          disableComingDistractions();
+        } else {
+          enableComingDistractions();
+        }
+        if (currentState < 1 || currentState >= 8) {
+          setFilmCountdownColor('red');
+        } else if (currentState >= 6) {
+          setFilmCountdownColor('green');
+        } else {
+          setFilmCountdownColor('yellow');
+        }
+        if (currentState == 6 || currentState == 7) {
+          $('.film-position').removeClass('d-none').addClass('d-block');
+        } else {
+          $('.film-position').removeClass('d-block').addClass('d-none');
+        }
+      }
+      doCountdownCheck();
+      $('.filmcountdown filmcountdown').html(filmStarts.toGMTString());
+      $('.filmcountdown filmcountdown').countDown({
+        css_class: 'countdown-alt-1'
+      });
+      $('.filmcountdown filmcountdown').countDown({
+        css_class: 'countdown-alt-1'
+      });
+
+      function setFilmCountdownColor(col)
+      {
+        $('.filmcountdown').removeClass('red');
+        $('.filmcountdown').removeClass('yellow');
+        $('.filmcountdown').removeClass('green');
+        $('.filmcountdown').addClass(col);
+      }
+
+      function showFullscreen(youtubeID, isPlaylist = false) {
+        $('.videoContainer').show();
+        $('.video-close').show();
+        var href = (isPlaylist) ? 'https://www.youtube.com/playlist?list='+youtubeID : 'https://www.youtube.com/watch?v='+youtubeID;
+        $('.video-close .view-on-youtube').attr('href', href);
+        $('.filmcountdown').hide();
+        $('.videoContainer').html('<iframe class="videoContainer__video" width="100%" height="100%" src="http://www.youtube.com/embed/' + ((isPlaylist) ? ("videoseries?list="+youtubeID+"&") : (youtubeID+"?")) +
+          'modestbranding=1&autoplay=1&controls=0&fs=0&loop=0&rel=0&showinfo=0&disablekb=1" frameborder="0" allow="autoplay"></iframe>');
+        window.scrollTo(0, 0);
+        $('body').css('overflow', 'hidden');
+
+      }
+
+      function hideFullscreen() {
+        $('.videoContainer').hide();
+        $('.videoContainer').empty();
+        $('.video-close').hide();
+        $('.filmcountdown').show();
+        $('body').css('overflow', 'visible');
+      }
       hideFullscreen();
+      $('button.main_trailer').click(function() {
+        showFullscreen('-Z0fXKSLqlo');
+      });
+      $('.video-close button').click(function() {
+        hideFullscreen();
+      });
+      $('.popup').click(function() {
+        var img = $(this).attr('src');
+        $("#popupModal img").attr('src', img);
+        $("#popupModal").modal('show');
+      });
+      $('.coming-distractions').tooltip();
     });
-    $('[data-toggle="tooltip"]').tooltip();
-    $('.popup').click(function() {
-      var img=$(this).attr('src');
-      $("#popupModal img").attr('src',img);
-      $("#popupModal").modal('show');
-
-    });
-  });
   </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165660436-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165660436-1');
+</script>
 
 </body>
 

@@ -61,17 +61,18 @@ h1, h2, h3, h4, h5, .movietitle {
 }
 
 /* CountDown */
+.filmcountdown, nav.bg-dark {
+background-color: #101010 !important;
+}
+
 .filmcountdown.red {
   border-top: 2px #f00000 solid;
-  background-color: #353a40;
 }
 .filmcountdown.yellow {
   border-top: 4px #f0ad4e solid;
-  background-color: #353a40;
 }
 .filmcountdown.green {
   border-top: 6px #5cb85c solid;
-  background-color: #353a40;
 }
 
 .filmcountdown .message {
