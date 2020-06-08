@@ -21,8 +21,8 @@ h1, h2, h3, h4, h5, .movietitle {
 .movieoftheweek {
   color: white;
   background-color: #000;
-  background-image: url("../images/november/banner.jpg");
-  background-position: bottom;
+  background-image: url("../images/blackpowermixtape/banner.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
